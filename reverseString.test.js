@@ -5,4 +5,9 @@ describe('Reverse String Unit Test', () =>{
     const result = reverseString('pot');
     expect(result).toBe('top');
   });
+
+  test('stop -> pots', () =>{
+    const result = reverseString('pots');
+    expect(result).toBe('stop');
+  });
 });
