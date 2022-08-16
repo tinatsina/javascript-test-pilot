@@ -1,5 +1,18 @@
 const stringLength = require('./test/stringLength');
 
-test('Hello -> return value = 5', () => {
-  expect(stringLength('Hello')).toBe(5);
+describe('String Testing', () => {
+  test('Hello -> return value = 5', () => {
+    const result = stringLength('Hello');
+    expect(result).toBe(5);
+  });
+
+  test('Microverse Universe -> return value = err', () => {
+    const result = stringLength('Microverse Universe');
+    expect(result).toBe('error - character length too short');
+  });
+
+  test('null = err', () => {
+    const result = stringLength('');
+    expect(result).toBe('error - character length too short');
+  });
 });
