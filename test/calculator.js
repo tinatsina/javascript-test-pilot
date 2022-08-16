@@ -11,7 +11,7 @@ class Calculator {
     return a/b;
   };
 
-  static multiply (a,b){
+  static times (a,b){
     return a*b;
   };
 }
